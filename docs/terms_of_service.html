@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidSave – Terms of Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+            border-bottom: 1px solid #222;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header .logo-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            box-shadow: 0 0 30px rgba(0, 198, 255, 0.3);
+        }
+
+        header .logo-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: white;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 6px;
+        }
+
+        header p {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #1a1a2e;
+            border: 1px solid #333;
+            border-radius: 20px;
+            padding: 6px 16px;
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: #111;
+            border: 1px solid #1e1e1e;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .card-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 18px;
+        }
+
+        .icon-blue   { background: rgba(0, 198, 255, 0.15); }
+        .icon-green  { background: rgba(0, 230, 118, 0.15); }
+        .icon-red    { background: rgba(255, 82, 82, 0.15); }
+        .icon-gold   { background: rgba(255, 215, 0, 0.15); }
+        .icon-purple { background: rgba(179, 136, 255, 0.15); }
+        .icon-teal   { background: rgba(0, 230, 180, 0.15); }
+        .icon-orange { background: rgba(255, 152, 0, 0.15); }
+        .icon-pink   { background: rgba(255, 64, 129, 0.15); }
+        .icon-gray   { background: rgba(150, 150, 150, 0.15); }
+
+        h2 {
+            font-size: 17px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        p {
+            color: #aaa;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        p:last-child { margin-bottom: 0; }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            color: #aaa;
+            font-size: 15px;
+            padding: 5px 0 5px 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #444;
+        }
+
+        .warn-box {
+            background: rgba(255, 82, 82, 0.05);
+            border: 1px solid rgba(255, 82, 82, 0.2);
+            border-radius: 10px;
+            padding: 14px 16px;
+            margin: 12px 0;
+        }
+
+        .warn-box p {
+            color: #fca5a5;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .info-box {
+            background: rgba(0, 198, 255, 0.05);
+            border: 1px solid rgba(0, 198, 255, 0.15);
+            border-radius: 10px;
+            padding: 14px 16px;
+            margin: 12px 0;
+        }
+
+        .info-box p {
+            color: #7dd3fc;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .ok-box {
+            background: rgba(0, 230, 118, 0.05);
+            border: 1px solid rgba(0, 230, 118, 0.15);
+            border-radius: 10px;
+            padding: 14px 16px;
+            margin: 12px 0;
+        }
+
+        .ok-box p {
+            color: #86efac;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        a {
+            color: #00c6ff;
+            text-decoration: none;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        .contact-box {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            border: 1px solid #1e3a4a;
+            border-radius: 16px;
+            padding: 28px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-box h2 { margin-bottom: 8px; }
+        .contact-box p  { margin-bottom: 16px; }
+
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 14px;
+            color: #555;
+            border-bottom: 1px solid #333;
+            padding-bottom: 2px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid #1a1a1a;
+            color: #444;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 16l-6-6h4V4h4v6h4l-6 6zm-8 4v-2h16v2H4z"/>
+        </svg>
+    </div>
+    <h1>VidSave</h1>
+    <p>Terms of Service</p>
+</header>
+
+<div class="container">
+
+    <div class="badge">Last updated: March 28, 2026</div>
+
+    <div class="nav-links">
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="terms_of_service.html">Terms of Service</a>
+    </div>
+
+    <!-- 1. Acceptance -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-icon icon-blue">📄</div>
+            <h2>1. Acceptance of Terms</h2>
+        </div>
+        <p>By downloading or using VidSave, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use the app.</p>
+    </div>
+
+    <!-- 2. Description -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-icon icon-teal">📱</div>
+            <h2>2. Description of Service</h2>
+        </div>
+        <p>VidSave is a tool that allows users to download publicly available video and audio content from the internet for personal offline use. The app provides:</p>
+        <ul>
+            <li>Video downloading from supported platforms</li>
+            <li>Audio extraction from videos</li>
+            <li>Download history management</li>
+            <li>Optional Premium subscription for additional features</li>
+        </ul>
+    </div>
+
+    <!-- 3. Permitted Use -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-icon icon-green">✅</div>
+            <h2>3. Permitted Use</h2>
+        </div>
+        <p>You may use VidSave only for lawful purposes. Permitted uses include:</p>
+        <ul>
+            <li>Downloading your own content for offline viewing</li>
+            <li>Downloading content with explicit permission from the creator</li>
+            <li>Downloading content that is in the public domain</li>
+            <li>Personal, non-commercial use only</li>
+        </ul>
+        <div class="ok-box">
+            <p>✓ Always ensure you have the right to download and use the content.</p>
+        </div>
+    </div>
+
+    <!-- 4. Prohibited Use -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-icon icon-red">🚫</div>
+            <h2>4. Prohibited Use</h2>
+        </div>
+        <p>You must NOT use VidSave to:</p>
+        <ul>
+            <li>Download copyrighted content without permission</li>
+            <li>Redistribute, sell, or commercially exploit downloaded content</li>
+            <li>Violate any platform's terms of service</li>
+            <li>Download content that violates privacy rights of others</li>
+            <li>Use the app for any illegal activity</li>
+        </ul>
+        <div class="warn-box">
+            <p>⚠ Violation of these terms may result in legal liability. You are solely responsible for how you use downloaded content.</p>
+        </div>
+    </div>
+
+    <!-- 5. Copyright -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-icon icon-gold">©️</div>
+            <h2>5. Copyright & Intellectual Property</h2>
+        </div>
+        <p>VidSave respects intellectual property rights. All downloaded content remains the property of the original content creator or rights holder.</p>
+        <p>VidSave is not affiliated with, endorsed by, or connected to TikTok, Instagram, YouTube, or any other platform. All third-party trademarks and logos belong to their respective owners.</p>
+    </div>
+
+    <!-- 6. Premium -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-icon icon-gold">⭐</div>
+            <h2>6. Premium Subscription</h2>
+        </div>
+        <p>VidSave offers an optional Premium subscription with additional features:</p>
+        <ul>
+            <li>Subscriptions are billed through Google Play</li>
+            <li>Payment is charged to your Google Play account upon confirmation</li>
+            <li>Subscriptions auto-renew unless cancelled at least 24 hours before the end of the current period</li>
+            <li>You can manage and cancel subscriptions in your Google Play account settings</li>
+            <li>No refunds for partial subscription periods</li>
+        </ul>
+        <div class="info-box">
+            <p>To cancel: Google Play → Subscriptions → VidSave → Cancel</p>
+        </div>
+    </div>
+
+    <!-- 7. Disclaimer -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-icon icon-orange">⚠️</div>
+            <h2>7. Disclaimer of Warranties</h2>
+        </div>
+        <p>VidSave is provided "as is" without warranties of any kind. We do not guarantee:</p>
+        <ul>
+            <li>Uninterrupted or error-free operation</li>
+            <li>Compatibility with all devices or Android versions</li>
+            <li>Availability of download features for any specific platform</li>
+            <li>Accuracy or completeness of downloaded content</li>
+        </ul>
+        <p style="margin-top:12px;">Third-party platforms may change their systems at any time, which could affect download functionality.</p>
+    </div>
+
+    <!-- 8. Limitation of Liability -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-icon icon-red">🛡️</div>
+            <h2>8. Limitation of Liability</h2>
+        </div>
+        <p>To the maximum extent permitted by law, VidSave and its developers shall not be liable for:</p>
+        <ul>
+            <li>Any indirect, incidental, or consequential damages</li>
+            <li>Loss of data or downloaded content</li>
+            <li>Legal consequences arising from misuse of downloaded content</li>
+            <li>Any damages resulting from third-party platform changes</li>
+        </ul>
+    </div>
+
+    <!-- 9. Termination -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-icon icon-pink">🔚</div>
+            <h2>9. Termination</h2>
+        </div>
+        <p>We reserve the right to discontinue the app or any of its features at any time without notice. You may stop using the app at any time by uninstalling it from your device.</p>
+    </div>
+
+    <!-- 10. Governing Law -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-icon icon-purple">🌐</div>
+            <h2>10. Governing Law</h2>
+        </div>
+        <p>These Terms of Service shall be governed by and construed in accordance with applicable laws. Any disputes shall be resolved through good-faith negotiation between the parties.</p>
+    </div>
+
+    <!-- 11. Changes -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-icon icon-gray">🔄</div>
+            <h2>11. Changes to Terms</h2>
+        </div>
+        <p>We may update these Terms of Service at any time. Changes will be posted on this page with an updated date. Continued use of the app after changes constitutes your acceptance of the updated terms.</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-box">
+        <h2>12. Contact Us</h2>
+        <p>Questions about these Terms of Service?</p>
+        <a href="mailto:dovdov.apps@gmail.com" class="contact-btn">dovdov.apps@gmail.com</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 VidSave. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
